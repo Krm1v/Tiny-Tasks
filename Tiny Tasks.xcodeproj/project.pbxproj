@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		863CB286283656960052B03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CB285283656960052B03D /* AppDelegate.swift */; };
 		863CB288283656960052B03D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CB287283656960052B03D /* SceneDelegate.swift */; };
-		863CB28A283656960052B03D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CB289283656960052B03D /* ViewController.swift */; };
+		863CB28A283656960052B03D /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CB289283656960052B03D /* CategoriesViewController.swift */; };
 		863CB28D283656960052B03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863CB28B283656960052B03D /* Main.storyboard */; };
 		863CB28F2836569B0052B03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863CB28E2836569B0052B03D /* Assets.xcassets */; };
 		863CB2922836569B0052B03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863CB2902836569B0052B03D /* LaunchScreen.storyboard */; };
+		863CB29E2836585F0052B03D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CB29D2836585E0052B03D /* Category.swift */; };
+		DEDF98CB71E8383A2202E1B1 /* Pods_Tiny_Tasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1571EED616C12DF046B746CF /* Pods_Tiny_Tasks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1571EED616C12DF046B746CF /* Pods_Tiny_Tasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiny_Tasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A39AB1E8021E32465AE47D /* Pods-Tiny Tasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiny Tasks.release.xcconfig"; path = "Target Support Files/Pods-Tiny Tasks/Pods-Tiny Tasks.release.xcconfig"; sourceTree = "<group>"; };
+		4448A1C09F69850420A4AA9D /* Pods-Tiny Tasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiny Tasks.debug.xcconfig"; path = "Target Support Files/Pods-Tiny Tasks/Pods-Tiny Tasks.debug.xcconfig"; sourceTree = "<group>"; };
 		863CB282283656960052B03D /* Tiny Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiny Tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863CB285283656960052B03D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		863CB287283656960052B03D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		863CB289283656960052B03D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		863CB289283656960052B03D /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		863CB28C283656960052B03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		863CB28E2836569B0052B03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		863CB2912836569B0052B03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		863CB2932836569B0052B03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863CB29D2836585E0052B03D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDF98CB71E8383A2202E1B1 /* Pods_Tiny_Tasks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276662BAA6D9B01CB144B277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1571EED616C12DF046B746CF /* Pods_Tiny_Tasks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		863CB279283656960052B03D = {
 			isa = PBXGroup;
 			children = (
+				863CB29D2836585E0052B03D /* Category.swift */,
 				863CB284283656960052B03D /* Tiny Tasks */,
 				863CB283283656960052B03D /* Products */,
+				E0CF695F6832FBAF1CDC560E /* Pods */,
+				276662BAA6D9B01CB144B277 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,57 @@
 		863CB284283656960052B03D /* Tiny Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				863CB285283656960052B03D /* AppDelegate.swift */,
-				863CB287283656960052B03D /* SceneDelegate.swift */,
-				863CB289283656960052B03D /* ViewController.swift */,
-				863CB28B283656960052B03D /* Main.storyboard */,
-				863CB28E2836569B0052B03D /* Assets.xcassets */,
-				863CB2902836569B0052B03D /* LaunchScreen.storyboard */,
+				863CB299283656A60052B03D /* UIApplication */,
+				863CB29A283656BD0052B03D /* View */,
+				863CB29B283656C30052B03D /* Controllers */,
+				863CB29C283656CE0052B03D /* Helpers */,
 				863CB2932836569B0052B03D /* Info.plist */,
 			);
 			path = "Tiny Tasks";
+			sourceTree = "<group>";
+		};
+		863CB299283656A60052B03D /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				863CB285283656960052B03D /* AppDelegate.swift */,
+				863CB287283656960052B03D /* SceneDelegate.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		863CB29A283656BD0052B03D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				863CB2902836569B0052B03D /* LaunchScreen.storyboard */,
+				863CB28B283656960052B03D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		863CB29B283656C30052B03D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				863CB289283656960052B03D /* CategoriesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		863CB29C283656CE0052B03D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				863CB28E2836569B0052B03D /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E0CF695F6832FBAF1CDC560E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4448A1C09F69850420A4AA9D /* Pods-Tiny Tasks.debug.xcconfig */,
+				24A39AB1E8021E32465AE47D /* Pods-Tiny Tasks.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 863CB2962836569B0052B03D /* Build configuration list for PBXNativeTarget "Tiny Tasks" */;
 			buildPhases = (
+				686172BE29B6E3F5E4D146FF /* [CP] Check Pods Manifest.lock */,
 				863CB27E283656960052B03D /* Sources */,
 				863CB27F283656960052B03D /* Frameworks */,
 				863CB280283656960052B03D /* Resources */,
+				EF7753B7D214723E57959F9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +194,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		686172BE29B6E3F5E4D146FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tiny Tasks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7753B7D214723E57959F9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tiny Tasks/Pods-Tiny Tasks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tiny Tasks/Pods-Tiny Tasks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tiny Tasks/Pods-Tiny Tasks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		863CB27E283656960052B03D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863CB28A283656960052B03D /* ViewController.swift in Sources */,
+				863CB28A283656960052B03D /* CategoriesViewController.swift in Sources */,
 				863CB286283656960052B03D /* AppDelegate.swift in Sources */,
 				863CB288283656960052B03D /* SceneDelegate.swift in Sources */,
+				863CB29E2836585F0052B03D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +388,7 @@
 		};
 		863CB2972836569B0052B03D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4448A1C09F69850420A4AA9D /* Pods-Tiny Tasks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +407,7 @@
 		};
 		863CB2982836569B0052B03D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A39AB1E8021E32465AE47D /* Pods-Tiny Tasks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
