@@ -14,7 +14,13 @@ class StorageManager {
     
     //MARK: - Categories Methods
     
-    func saveCategory(_ category: [Category]) {
+    func saveCategories(_ category: [Category]) {
+        write {
+            realm.add(category)
+        }
+    }
+    
+    func saveCategory(_ category: Category) {
         write {
             realm.add(category)
         }

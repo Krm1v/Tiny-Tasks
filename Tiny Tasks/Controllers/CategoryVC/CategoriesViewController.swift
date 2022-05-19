@@ -17,7 +17,13 @@ class CategoriesViewController: UITableViewController {
     //MARK: - UIView Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        categories = StorageManager.shared.realm.objects(Category.self)
         setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 
     //MARK: - TableView DataSource Methods
@@ -32,6 +38,8 @@ class CategoriesViewController: UITableViewController {
         cell.textLabel?.text = category.title
         return cell
     }
+    
+    
     
     private func setupUI() {
         
@@ -48,7 +56,7 @@ class CategoriesViewController: UITableViewController {
     }
     
     @objc dynamic func addButtonPressed() {
-        
+        showAlert()
     }
 }
 
