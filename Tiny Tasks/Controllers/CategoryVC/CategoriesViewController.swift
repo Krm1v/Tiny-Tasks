@@ -47,11 +47,15 @@ class CategoriesViewController: UITableViewController {
                                         target: self,
                                         action: #selector(addButtonPressed)
         )
+        title = "Categories"
+        
         navigationItem.rightBarButtonItem = addButton
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Categories"
+        navigationController?.navigationBar.tintColor = .systemPink
+        
         tableView.rowHeight = 50
         tableView.separatorStyle = .none
+        
         
     }
     
@@ -59,5 +63,4 @@ class CategoriesViewController: UITableViewController {
         showAlert()
     }
 }
-
 

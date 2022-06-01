@@ -17,6 +17,7 @@
 		8649C220283661FD0025C6A0 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649C21F283661FD0025C6A0 /* StorageManager.swift */; };
 		8649C224283678280025C6A0 /* Extension + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649C223283678280025C6A0 /* Extension + Alert.swift */; };
 		8649C226283686DE0025C6A0 /* Extension + ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8649C225283686DE0025C6A0 /* Extension + ShowAlert.swift */; };
+		868C83682847C8F600999D70 /* Extension + TableView Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C83672847C8F600999D70 /* Extension + TableView Delegate.swift */; };
 		DEDF98CB71E8383A2202E1B1 /* Pods_Tiny_Tasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1571EED616C12DF046B746CF /* Pods_Tiny_Tasks.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		8649C21F283661FD0025C6A0 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		8649C223283678280025C6A0 /* Extension + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Alert.swift"; sourceTree = "<group>"; };
 		8649C225283686DE0025C6A0 /* Extension + ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ShowAlert.swift"; sourceTree = "<group>"; };
+		868C83672847C8F600999D70 /* Extension + TableView Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + TableView Delegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				863CB289283656960052B03D /* CategoriesViewController.swift */,
+				868C83672847C8F600999D70 /* Extension + TableView Delegate.swift */,
 				8649C225283686DE0025C6A0 /* Extension + ShowAlert.swift */,
 			);
 			path = CategoryVC;
@@ -278,6 +281,7 @@
 				863CB28A283656960052B03D /* CategoriesViewController.swift in Sources */,
 				863CB286283656960052B03D /* AppDelegate.swift in Sources */,
 				8649C220283661FD0025C6A0 /* StorageManager.swift in Sources */,
+				868C83682847C8F600999D70 /* Extension + TableView Delegate.swift in Sources */,
 				863CB288283656960052B03D /* SceneDelegate.swift in Sources */,
 				863CB29E2836585F0052B03D /* Category and Task.swift in Sources */,
 			);
